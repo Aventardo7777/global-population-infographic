@@ -495,8 +495,8 @@ function lineChart(cfg){
     let tx = x + (n.dx||0), ty = y + (n.dy||-10);
     tx = Math.max(p.l+4, Math.min(W-p.r-4, tx));
     ty = Math.max(p.t+14, Math.min(H-p.b-4, ty));
-    s += `<text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" text-anchor="${n.anchor||'middle'}" font-family="var(--num)" font-weight="900" font-size="14" fill="${n.color}">${n.text}</text>`;
-    if(n.sub) s += `<text x="${tx.toFixed(1)}" y="${(ty+15).toFixed(1)}" text-anchor="${n.anchor||'middle'}" font-family="var(--body)" font-size="11" font-weight="700" fill="${n.color}">${n.sub}</text>`;
+    s += `<text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" text-anchor="${n.anchor||'middle'}" font-family="Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="14" fill="${n.color}">${n.text}</text>`;
+    if(n.sub) s += `<text x="${tx.toFixed(1)}" y="${(ty+15).toFixed(1)}" text-anchor="${n.anchor||'middle'}" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="${n.color}">${n.sub}</text>`;
   });
   s += `</svg>`;
   return s;
